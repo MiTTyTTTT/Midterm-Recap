@@ -3,8 +3,8 @@ cap1= "hAoPy"
 cap2= "moveNEXT"
 cap3= "shOrtCAKE"
 
-function capToFront(text) {
-  let chars = text.split('')
+function capToFront(cap) {
+  let chars = cap.split('')
   const uppercase = chars.filter((char) => char == char.toUpperCase())
   const lowercase = chars.filter((char) => char == char.toLowerCase())
   const result = [...uppercase, ...lowercase].join('')
